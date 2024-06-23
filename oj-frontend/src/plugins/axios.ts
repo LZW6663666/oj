@@ -1,5 +1,7 @@
-// 添加请求拦截器   axios的全局（拦截）配置，当然，也可以在generated/core/OpenAPI.ts里面修改实现
+// 添加请求拦截器  ，当然 axios的全局（拦截）配置，也可以在generated/core/OpenAPI.ts里面修改实现
 import axios from "axios";
+
+// axios.defaults.withCredentials = true;
 
 axios.interceptors.request.use(function (config) {
     // 在发送请求之前做些什么

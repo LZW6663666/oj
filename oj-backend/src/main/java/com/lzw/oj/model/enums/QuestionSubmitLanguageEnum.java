@@ -15,7 +15,7 @@ public enum QuestionSubmitLanguageEnum {
     JAVA("java", "java"),
     JAVASCRIPT("javascript", "javascript"),
     PYTHON("python", "python"),
-    GOLANG("golang", "golang"),
+    GOLANG("go", "go"),
     CPP("cpp", "cpp");
 
 
