@@ -31,24 +31,12 @@ const codeEditorRef = ref();
 const codeEditor = ref();
 // const value = ref('hello word');
 
-// const fillValue = () => {
-//   if(!codeEditor.value){
-//     return;
-//   }
-//  toRaw(codeEditor.value).setValue('新的值');
-// }
+
 watch(()=>props.language,()=>{
-  codeEditor.value = monaco.editor.create(codeEditorRef.value, {
-    value: props.value,
-    language: props.language,
-    automaticLayout: true,
-    minimap: {
-      enabled: true,
-    },
-    colorDecorators: true,
-    readOnly: false,
-    theme: 'vs-dark',
-  });
+  //修改语言
+  if(codeEditor.value){
+    monaco.editor.setModelLanguage(toRaw(codeEditor.value).getModel(), props.language);
+  }
 })
 
 onMounted(() => {
