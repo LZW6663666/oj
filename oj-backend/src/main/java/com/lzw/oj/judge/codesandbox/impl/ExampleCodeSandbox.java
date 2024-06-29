@@ -3,7 +3,7 @@ package com.lzw.oj.judge.codesandbox.impl;
 import com.lzw.oj.judge.codesandbox.CodeSandBox;
 import com.lzw.oj.judge.codesandbox.model.ExecuteCodeRequest;
 import com.lzw.oj.judge.codesandbox.model.ExecuteCodeResponse;
-import com.lzw.oj.model.dto.questionsubmit.JudgeInfo;
+import com.lzw.oj.judge.codesandbox.model.JudgeInfo;
 import com.lzw.oj.model.enums.JudgeInfoMessageEnum;
 import com.lzw.oj.model.enums.QuestionSubmitStatusEnum;
 import lombok.extern.slf4j.Slf4j;

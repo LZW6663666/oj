@@ -4,16 +4,13 @@ import cn.hutool.json.JSONUtil;
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
-import com.lzw.oj.model.dto.question.JudgeConfig;
-import com.lzw.oj.model.dto.questionsubmit.JudgeInfo;
-import com.lzw.oj.model.entity.Question;
+import com.lzw.oj.judge.codesandbox.model.JudgeInfo;
 import com.lzw.oj.model.entity.QuestionSubmit;
 import lombok.Data;
 import org.springframework.beans.BeanUtils;
 
 import java.io.Serializable;
 import java.util.Date;
-import java.util.List;
 
 /**
  * 题目提交封装类

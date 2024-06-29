@@ -1,6 +1,6 @@
 package com.lzw.oj.judge.strategy;
 
-import com.lzw.oj.model.dto.questionsubmit.JudgeInfo;
+import com.lzw.oj.judge.codesandbox.model.JudgeInfo;
 import com.lzw.oj.model.entity.QuestionSubmit;
 import org.springframework.stereotype.Service;
 

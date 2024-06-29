@@ -1,4 +1,4 @@
-package com.lzw.oj.judge.codesandbox.model;
+package com.lzw.lzwcodesandbox.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
