@@ -8,6 +8,7 @@ import com.lzw.oj.model.entity.Question;
 import com.lzw.oj.model.enums.JudgeInfoMessageEnum;
 
 import java.util.List;
+import java.util.Optional;
 
 /**
  * java程序的判题策略
@@ -28,8 +29,8 @@ public class JavaLanguageJudgeStrategy implements JudgeStrategy {
         List<JudgeCase> judgeCaseList = judgeContext.getJudgeCaseList();
 
         JudgeInfoMessageEnum judgeInfoMessageEnum = JudgeInfoMessageEnum.ACCEPTED;//默认为通过
-        Long memory = judgeInfo.getMemory();
-        Long time = judgeInfo.getTime();
+        Long memory = Optional.ofNullable(judgeInfo.getMemory()).orElse(0L);
+        Long time = Optional.ofNullable(judgeInfo.getTime()).orElse(0L);
 
         JudgeInfo judgeInfoResponse = new JudgeInfo();
         judgeInfoResponse.setMessage(judgeInfoMessageEnum.getValue());

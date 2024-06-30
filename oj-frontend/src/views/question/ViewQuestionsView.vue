@@ -100,7 +100,7 @@ const doSubmit = async () => {
     return
   }
   // message.success("提交成功");
-  const res = await QuestionSubmitControllerService.doQuestionSubmitUsingPost({
+  const res = await QuestionControllerService.doQuestionSubmitUsingPost({
     ...form.value,
     questionId: question.value.id,
   });
