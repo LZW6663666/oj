@@ -77,6 +77,7 @@ public class JavaNativeCodeSandBoxOld implements CodeSandBox {
                 executeMessageList.add(executeMessage);
 
             }catch (Exception e){
+                System.out.println("代码运行失败了");
                 return getResponse(e);
             }
         }

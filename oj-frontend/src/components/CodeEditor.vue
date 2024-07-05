@@ -1,5 +1,5 @@
 <template>
-  <div id="code-editor" ref="codeEditorRef" style="min-height: 600px;height: 80vh"/>
+  <div id="code-editor" ref="codeEditorRef" style="min-height: 500px;height: 70vh"/>
   <!--  <Editor :value="value" :plugins="plugins" @change="handleChange"/>-->
 <!--  {{value}}-->
 <!--  <a-button @click="fillValue">填充值</a-button>-->

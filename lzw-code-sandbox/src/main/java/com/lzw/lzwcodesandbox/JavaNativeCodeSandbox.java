@@ -20,7 +20,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.UUID;
 
-public class JavaNativeCodeSandbox implements CodeSandBox {
+public class JavaNativeCodeSandbox implements CodeSandBox {//这里暂时还没像javaDockerCodeSandBox那样继承JavaCodeSandboxTemplate然后改造
 
     private static final String GLOBAL_CODE_DIR_NAME = "tmpCode";
     private static final String GLOBAL_JAVA_FILE_NAME = "Main.java";

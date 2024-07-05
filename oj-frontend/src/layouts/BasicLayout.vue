@@ -3,7 +3,7 @@
     <a-layout style="min-height: 100vh">
       <a-layout-header class="header"><GlobalHeader /></a-layout-header>
       <a-layout-content class="content"><router-view /></a-layout-content>
-      <a-layout-footer class="footer">版权信息</a-layout-footer>
+      <a-layout-footer class="footer" >版权信息</a-layout-footer>
     </a-layout>
   </div>
 </template>
@@ -20,13 +20,19 @@
 #basicLayout .content{
   background: linear-gradient(to right,#fefefe,#fff);
   margin-bottom: 16px;
-  padding: 20px;
+  /*padding: 20px;*/
+  padding-right: 20px;
+  padding-left: 20px;
   
 }
 #basicLayout .footer{
-  background: #efefef;
+  /*background: #efefef;*/
+  background-color: RGB(30,30,30);
+  color: white;
   padding: 16px;
   position: sticky;
+  height: 6px;
+  line-height: 6px;
   bottom: 0;
   left: 0;
   right: 0;
